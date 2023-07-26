@@ -43,3 +43,13 @@ stories:
   steps:
   - intent: python_libraries
   - action: utter_python_libraries
+- story: interactive_story_1
+  steps:
+  - intent: python_explanation
+  - action: utter_python_info
+  - intent: python_syntax
+  - action: utter_python_syntax
+  - intent: python_libraries
+  - action: utter_python_libraries
+  - intent: python_syntax
+  - action: utter_python_syntax

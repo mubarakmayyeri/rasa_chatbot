@@ -1,46 +1,39 @@
-version: "3.1"
-
+version: '3.1'
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - python_explanation
-  - python_syntax
-  - python_libraries
-
+- affirm
+- bot_challenge
+- deny
+- goodbye
+- greet
+- mood_great
+- mood_unhappy
+- python_explanation
+- python_libraries
+- python_syntax
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
-
+  - text: Hey! How are you?
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
   utter_did_that_help:
-  - text: "Did that help you?"
-
+  - text: Did that help you?
   utter_happy:
-  - text: "Great, carry on!"
-
+  - text: Great, carry on!
   utter_goodbye:
-  - text: "Bye"
-
+  - text: Bye
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
+  - text: I am a bot, powered by Rasa.
   utter_python_info:
-  - text: "Python is a high-level, interpreted programming language known for its simplicity and readability. It was created by Guido van Rossum and first released in 1991. Python is widely used in various domains, including web development, data science, artificial intelligence, automation, and more."
-
+  - text: Python is a high-level, interpreted programming language known for its simplicity and readability. It was created by Guido van Rossum and first released in 1991. Python is widely used in various domains, including web development, data science, artificial intelligence, automation, and more.
   utter_python_syntax:
-  - text: "Python's syntax emphasizes code readability, making it an excellent language for various applications, from web development to data analysis and artificial intelligence. The syntax of Python is designed to be clear and concise, making it easy for both beginners and experienced developers to write and understand code."
-
+  - text: Python's syntax emphasizes code readability, making it an excellent language for various applications, from web development to data analysis and artificial intelligence. The syntax of Python is designed to be clear and concise, making it easy for both beginners and experienced developers to write and understand code.
   utter_python_libraries:
-  - text: "Python libraries are pre-written code modules that offer a wide range of functionalities and tools to extend Python's capabilities. They are designed to simplify and accelerate the development process by providing ready-to-use functions and methods for various tasks. Python libraries are created and maintained by the Python community and cover diverse areas such as data manipulation, web development, scientific computing, machine learning, and more."
-
+  - text: Python libraries are pre-written code modules that offer a wide range of functionalities and tools to extend Python's capabilities. They are designed to simplify and accelerate the development process by providing ready-to-use functions and methods for various tasks. Python libraries are created and maintained by the Python community and cover diverse areas such as data manipulation, web development, scientific computing, machine learning, and more.
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+actions:
+- utter_python_libraries
+- utter_python_syntax
+- utter_python_info
