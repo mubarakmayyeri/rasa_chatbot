@@ -28,3 +28,18 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: python explanation
+  steps:
+  - intent: python_explanation
+  - action: utter_python_info
+
+- story: python syntax
+  steps:
+  - intent: python_syntax
+  - action: utter_python_syntax
+
+- story: python libraries
+  steps:
+  - intent: python_libraries
+  - action: utter_python_libraries

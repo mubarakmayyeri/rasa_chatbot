@@ -89,3 +89,24 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: python_explanation
+  examples: |
+    - whta is python?
+    - explain python?
+    - is python a language?
+    - describe python in simple terms?
+
+- intent: python_syntax
+  examples: |
+    - what is the syntax of python?
+    - can you show me syntax of python?
+    - tell me about python syntax
+    - is python syntax complicated?
+
+- intent: python_libraries
+  examples: |
+    - what are python libraries?
+    - explain about python libraries?
+    - what are the use of libraries in python?
+    - tell me about libraries in python?
